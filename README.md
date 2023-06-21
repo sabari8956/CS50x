@@ -2,4 +2,4 @@
 CS50x pset's and labs
 
 
-Upto Week1 
+Week1 completed
