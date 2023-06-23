@@ -2,4 +2,4 @@
 CS50x pset's and labs
 
 
-Week1 completed
+Week2 pset2 bulbs completed
