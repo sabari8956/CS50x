@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title%}
+Quote
+{% endblock title%}
+
+
+{% block main %}
+
+
+<div class="text-center">
+    <h1>A Share {{ name }} ({{ symbol }}) costs {{ price | usd}}</h1>
+</div>
+
+{% endblock main%}

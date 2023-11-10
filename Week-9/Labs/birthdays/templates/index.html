@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Birthdays</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Birthdays</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+
+                <h2>Add a Birthday</h2>
+                <!-- TODO: Create a form for users to submit a name, a month, and a day -->
+                <form method="post" action="/">
+                    <input type="name" name="name" required >
+                    <select name="month" required>
+                        <option disabled >Month</option>
+                        {% for i in range(1, 13) %}
+                            <option value="{{ i }}" required >{{ i }}</option>
+                        {% endfor %}
+                    </select>
+                    <input type="number" name="day" style="width: 50px;" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="section">
+
+                <h2>All Birthdays</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Birthday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- TODO: Loop through the database entries to display them in this table -->
+                        {% for data in datas %}
+                         <tr>
+                            <th>{{ data['name'] }}</th>
+                            <th>{{ data['day'] }}/{{ data['month'] }}</th>
+                         </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

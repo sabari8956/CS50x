@@ -1,0 +1,21 @@
+{%  extends 'layout.html' %}
+
+{% block title %}
+Sell
+{% endblock title%}
+
+{% block main %}
+<form action="/sell" method="post">
+    <select name="symbol">
+        <option selected disabled >Select</option>
+        <!-- for loop / every stock owned -->
+        {% for stock in stocks %}
+        <option> {{ stock}}</option>
+        {% endfor %}
+    </select>
+    <input name="shares" type="number" min="1">
+    <button type="submit">Sell</button>
+
+
+</form>
+{% endblock main %}

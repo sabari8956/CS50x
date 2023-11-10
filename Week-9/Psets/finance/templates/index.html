@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block main %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-start">Name</th>
+            <th class="text-start">Shares</th>
+            <th class="texxt-end">Price</th>
+            <th class="text-end">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for data in datas %}
+            <tr>
+                <th class="text-start">{{ data['stock'] }}</th>
+                <th class="text-start">{{ data['stock_count'] }}</th>
+                <th class="text-end">{{ data['price'] | usd }}</th>
+                <th class="text-end">{{ data['total'] | usd }} </th>
+            </tr>
+        {% endfor %}
+        <tr>
+            <th></th>
+            <th></th>
+            <th><strong>Cash</strong></th>
+            <th>{{ cash | usd}}</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th><strong>Total</strong></th>
+            <th>{{ total | usd }}</th>
+        </tr>
+    </tbody>
+</table>
+{% endblock main%}

@@ -1,0 +1,28 @@
+{% extends 'layout.html'%}
+
+{% block title %}
+Sell
+{% endblock title%}
+
+{% block main%}
+<table>
+    <thead>
+        <tr>
+            <th>Transaction Type</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Time Stamp</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for transaction in transactions %}
+        <tr>
+            <th>{{ transaction['type'] }}</th>
+            <th>{{ transaction['stock'] }}</th>
+            <th>{{ transaction['stock_count'] }}</th>
+            <th>{{ transaction['time'] }}</th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock main%}

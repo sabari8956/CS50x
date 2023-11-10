@@ -1,0 +1,107 @@
+* {
+    padding:0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #232323;
+    overflow-x: hidden;
+}
+
+.landing-page {
+    height: 100vh;
+}
+.design-80 {
+    background-color: #2BB94A;
+    height: 80vh;
+}
+#name {
+    padding: 3vh;
+    position: absolute;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 81px;
+    color: azure;
+}
+#title {
+    position: absolute;
+    padding: 3vh;
+    padding-top: 64vh;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 128px;
+    line-height: 161px;
+    color: azure;
+
+}
+
+nav {
+    /* position: absolute; */
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+.nav-links {
+    display: flex;
+
+    justify-content: center;
+    height: 10vh;
+    background: rgba(43, 48, 43, 0.5);
+}
+
+.nav-link {
+    margin: 10px;
+    padding: 0 90px 0 10px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 81px;
+    color: #2BB94A;
+
+}
+
+.home-profile {
+    height: 80vh;
+}
+
+.content {
+    margin-top: 10vh;
+    /* background-color: antiquewhite; */
+    display: flex;
+}
+
+.image-holder {
+    /* position: absolute; */
+    flex: 1;
+    width: 800px;
+    height: 600px;
+    background-color: #2BB94A;
+    margin-left: 5vw;
+    overflow: hidden;
+}
+
+.info
+{
+    flex: 1;
+    /* background-color: aqua; */
+    width: 576px;
+    height: 600px;
+    margin-left: 4vw;
+}
+
+.socials-pg2 {
+    font-size: 92px;
+    padding: 5vh;
+    color: aliceblue;
+}
+
+.imaimage {
+    /* padding: 20px 20px 20px 20px; */
+    z-index: 99;
+}

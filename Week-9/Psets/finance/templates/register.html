@@ -1,0 +1,25 @@
+<!-- merges this html with the html file given below -->
+{% extends 'layout.html' %}
+
+<!-- adds title to site -->
+{% block title %}
+    Register
+{% endblock %}
+
+<!-- inside the main parent/ -->
+
+{% block main %}
+<form action="/register" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text">
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="password-1" name="password" placeholder="Password" type="password">
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="password-2" name="confirmation" placeholder="Re-Enter Password" type="password">
+    </div>
+    <button type="submit" >Register</button>
+</form>
+{% endblock %}
+
