@@ -1,5 +1,5 @@
-# CS50x
-CS50x pset's and labs
+# CS50x Course Problem Sets Solutions
 
+This repository contains solutions for the CS50x Course Problem Sets.
 
-Week2 pset2 caesar completed
+## This for educational purposes only
